@@ -1,0 +1,195 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(19, 20, 51);
+    background-image:
+        url(../assets/pattern-squiggly-line-top.svg),
+        url(../assets/pattern-squiggly-line-bottom-desktop.svg), 
+        url(../assets/background-desktop.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 450px auto, 450px auto, cover;
+    background-position: top right, bottom left, center;
+    background-attachment: fixed, fixed, fixed;
+    font-size: x-large;
+    color: rgb(226, 178, 242);  
+                                                                                                               
+}
+
+.inconsolata-\<uniquifier\> {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.root {
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+}
+
+.about{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    flex-direction: row;
+}
+
+.about-text{
+    flex: 1;
+    text-align: center;
+}
+
+.about-text h1{
+    background: linear-gradient(90deg, #985a34, #7f4ab8); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+.about-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img{
+    width: 650px;
+    height: 450px;
+    border-radius: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+  padding: 20px 40px;           
+  background-color: transparent; 
+  width: 100%;
+  box-sizing: border-box;       
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;          
+  gap: 24px;                 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;      
+  color: rgb(226, 178, 242);  
+  transition: color 0.2s ease;
+
+}
+
+.nav-links li a:hover {
+    color: rgb(226, 178, 242);
+}
+
+.app-icon img {
+  width: 24px;                  
+  height: 24px;
+  display: block;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);   
+}
+
+.app-icon img:hover {
+  transform: scale(1.1);
+}
+
+.btn-register {
+  background-color: rgb(226, 178, 242);   /*Solid background*/
+  color: #332965 !important;             /*Dark text so it stands out on white*/
+  font-weight: 700;                       /* Makes the text bold*/
+  padding: 12px 24px;                    /*Adds spacing inside the button (top/bottom, left/right)*/
+  border-radius: 50px;                  /*Makes it a perfectly rounded capsule button*/
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;      
+}
+
+/* Button Hover State */
+.btn-register:hover {
+  background-color: transparent;            /*Makes background disappear on hover*/
+  color: rgb(226, 178, 242) !important;   /* Turns text color*/
+  border-color:rgb(226, 178, 242);        /* Adds a clean color border*/
+  cursor: pointer;
+}
+
+.form-container {
+    text-align: center;
+    margin: 40px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    box-sizing: border-box;
+
+}
+
+.btn-submit {
+    background-color: #985a34;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20%;
+    border: 1px;
+
+}
+
+#registrationForm {
+    background-color: #261d57;
+    border: 1px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 460px;
+    align-items: center;
+}
+
+.upload-container {
+    position:relative;
+    background-color: #28272a;
+    border-radius: 12px;
+    border: 10px;
+    padding: 40px;
+    max-width: 460px;
+    margin: 40px;
+}
+
+.center-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+}
+
+.ticket-card {
+    position: relative;
+    width: 600px;
+    height: 280px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 24px;
+
+}
+
+.ticket-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 120%;
+}
