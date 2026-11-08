@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf - Register</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <img src="../assets/logo-full.svg" alt="Coding Conf Logo" class="header-logo">
+    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container center-wrapper">
+            <h2>Your Journey to Coding Conf 2026 Starts Here!</h2>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+
+                    <label> Upload Avatar: </label>
+                    <div class="upload-container">
+	                <input type="file" name="tb1" id="avatar" name="avatar" accept="image/jpeg, image/png" required/><br>
+                    <img src="../assets/icon-upload.svg" class="upload-icon">
+                    <p class="upload-text">Drag and drop or click to upload</p>
+                    <p class="upload-subtext">Upload your photo (JPEG/PNG, max size 500KB)</p>
+                    </div>
+
+                    <span class="error-msg" id="avatarError"></span>
+
+                    <label> Full Name: </label><br>
+	                <input type="text" name="tb2" maxlength="100" minlength="50" id="fullname" name="fullname" required placeholder="Enter your full name"/> 
+                    <span class="error-msg" id="nameError"></span>
+                    <br/><br/>
+
+                    <label> Email: </label><br>
+	                <input type="email" name="tb3" maxlength="100" minlength="50" id="email" name="email" required placeholder="user@domain.com"/> 
+                    <span class="error-msg" id="emailError"></span>
+                    <br/><br/>
+
+                    <label> GitHub User Tag: </label><br>
+	                <input type="text" name="tb4" maxlength="100" minlength="50" id="github" name="github" required placeholder="@username"/> 
+                    <span class="error-msg" id="githubError"></span>
+                    <br/><br/>
+
+                </div>
+
+                <button type="submit" class="btn-submit">Generate Ticket</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf - Ticket</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/logo-full.svg"
+                 alt="Coding Conf Logo"
+                 class="header-logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <main class="ticket-main">
+
+        <!--CONGRATULATIONS SECTION-->
+        <section class="ticket-intro">
+
+            <h1 id="bannerMessage" class="banner">
+                Congrats! Your ticket is ready.
+            </h1>
+
+            <p class="confirmation-message">
+                We've emailed your ticket to
+                <span id="confirmationEmail">your email</span>
+                and will send updates in the run up to the event.
+            </p>
+
+        </section>
+
+
+        <!--TICKET SHAPE STARTS HERE-->
+        <div class="glass-ticket" id="ticketCard">
+            <img src="../assets/pattern-ticket.svg" class="ticket-content">
+
+            <!-- Ticket heading and serial number -->
+            <div class="ticket-header">
+                <span class="brand-title">Coding Conf</span>
+
+                <span class="serial-tracker" id="serialTracker">
+                    #01609
+                </span>
+            </div>
+
+
+            <!-- Attendee information inside ticket -->
+            <div class="ticket-body">
+
+                <img id="ticketAvatar" src="../assets/image-avatar.jpg" class="avatar-img">
+
+                <div class="ticket-info">
+
+                    <h3 id="ticketName"></h3>
+
+                    <p id="confirmationEmail"></p>
+
+                    <a id="ticketGithub"
+                       href="#"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--Event date and location-->
+            <div class="ticket-meta">
+
+                <p>Date: October 26, 2026</p>
+
+                <p>Location: Papine, Kgn</p>
+
+            </div>
+
+        </div>
+        <!--TICKET SHAPE ENDS HERE-->
+
+    </main>
+
+    <script src="../js/ticket.js"></script>
+
+</body>
+</html>
